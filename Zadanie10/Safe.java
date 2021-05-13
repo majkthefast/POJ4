@@ -1,3 +1,4 @@
+
 package zadanie;
 
 import java.util.ArrayList;
@@ -35,7 +36,6 @@ public class Safe {
         addAlarm();
         PinEvent pinEvent = new PinEvent(this);
         alarms.forEach(alarm -> alarm.alarmTurnOn(pinEvent));
-        System.out.println("Invalid PIN");
     }
 
     private void correctPin() {
